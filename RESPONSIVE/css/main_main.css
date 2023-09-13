@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url(main_footer.css);
+@import url(main_reset.css);
+@import url(main_header.css);
+/*width:1200일 때, header_menu의 h1의 width:14%로 margin삭제, main_header의 font크기도 변경*/
+.headerWrap2{display:none;}
+.containerWrap{width:100%;}
+#container{width:100%; margin:-15% auto 0%;; z-index:99; position:relative;}
+
+
+.preview_list{border:1.5vw solid rgba(255,255,255,0.5)}
+.preview_list li{float:left; width:25%;}
+.preview_list li img{width:100%;}
+
+.preview_list li:last-child{text-align: right;}
+.preview_list li:nth-of-type(2){text-align: center;}
+.preview_list li:nth-of-type(3){text-align: center;}
+.preview_list li:nth-of-type(4){text-align: right;}
+
+
+.vip_text,
+.event_text,
+.Room_text,
+.hall_text
+{font-family: '휴먼옛체'; font-weight:500; font-size:1.7rem; color:#1f1e1e; margin-bottom:2%;  margin-top:2%}
+
+.vip_button,
+.Room_button,
+.event_button,
+.hall_button{border: 1px solid #000; background-color:#000; display:inline-block; font-size:1.2rem; font-weight:300; width:40%; text-align: center;}
+
+.vip_button a,
+.Room_button a,
+.event_button a,
+.hall_button a{color:#fff;} 
+
+.hotel_introduce {margin-bottom:1%}
+.hotel_introduce h3{text-align: center; font-size:2rem;}
+
+.hotel_introduce .introduce{width:27%; font-size:1.2vw; float:left; margin-right:3%; }
+.introduce .introduce_text{border-bottom:1px solid #000; padding:5% 5% 10% 5%;
+text-align: left; font-weight:300; color:#222}
+.weather{font-weight:500; color:#222; text-align: center;}
+.weather p:nth-of-type(2){background:url(../images/icon/weather_small.jpg)no-repeat 0 0;  height:70px; text-align: right;}
+.map{ width:70%; float:left;}
+.map p img{width:100%; height:100%;}
+
+.hotel_info{width:100%; background-color:#f9f9f9; padding:1.5%; color:#ababab; font-weight:300; margin-bottom:2%; font-size:1vw;}
+.check_info{float:left; width:25%;}
+.number_info{float:left; width:25%;}
+.structure_info{float:left; width:25%;}
+.etc_info{float:left; width:25%;}
+
+.structure_info dt, .number_info dt{float:left;}
+
+.variable_info{width:100%; margin-bottom:2%;}
+
+.roomwrap{position:relative; float:left; width:74.9%; overflow: hidden; height:100%;}
+.room_list{width:500%;}
+
+.room_list li span{position:absolute; top:80%; left:10%; display:none; color:#fff; font-size:3vw}
+.room_list li.on span{position:absolute; top:80%; left:10%; display:block;}
+.room_list li{float:left; width:20%;}
+.room_list li img{width:100%; height:100%;}
+.prevbtn{position:absolute; top: 50%; left:2%; z-index:99; cursor: pointer}
+.nextbtn{position:absolute; top: 50%; right:2%; cursor:pointer}
+.slide_btn{position:absolute; bottom:2%; left:40%; color:#fff; width:20%;text-align: center;}
+.slide_btn span{background:url(../images/icon/slide_btn_on.png)no-repeat; display:inline-block; width:10%; font-size:0; height:15px; margin-right:5%;}
+.slide_btn span.on{background:url(../images/icon/slide_btn_off.png)no-repeat;}
+
+.roomwrap2{width:25.1%;float:left;}
+.room_list_2{}
+.room_list_2 li{width:100%;}
+.room_list_2 li:first-child:after{content:''; background-color:rgba(0,0,0,0.3); position:absolute; top:0; left:0; right:0; bottom:0; width:100%;}
+.room_list_2 li:first-child{position:relative;}
+.room_list_2 li:first-child span{position:absolute; top:40%; left:0; font-size:2rem; color:#fff; z-index:10; display:block; text-align: center; width:100%; height:100%;}
+
+.room_list_2 li:nth-of-type(2):after{content:''; background-color:rgba(0,0,0,0.3); position:absolute; top:0; left:0; right:0; bottom:0; width:100%;}
+.room_list_2 li:nth-of-type(2){position:relative;}
+.room_list_2 li:nth-of-type(2) span{position:absolute; top:40%; left:0; font-size:2rem; color:#fff; z-index:10; display:block; text-align: center; width:100%; height:100%;}
+
+.room_list_2 li:nth-of-type(3):after{content:''; background-color:rgba(0,0,0,0.3); position:absolute; top:0; left:0; right:0; bottom:0; width:100%;}
+.room_list_2 li:nth-of-type(3){position:relative;}
+.room_list_2 li:nth-of-type(3) span{position:absolute; top:40%; left:0; font-size:2rem; color:#fff; z-index:10; display:block; text-align: center; width:100%; height:100%;}
+.room_list_2 li img{width:100%}

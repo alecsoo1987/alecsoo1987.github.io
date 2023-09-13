@@ -1,0 +1,17 @@
+@charset "utf-8";
+#footerWrap{width:100%; background-color:#111;}
+.footer{padding:2%;}
+.main_footer{float:left; color:#929292; font-size:0.7vw; line-height:180%;
+width:66%;}
+address{font-style:normal;}
+
+.second_footer{float:left; width:15%;}
+.second_footer li a{color:#929292; font-size:0.7vw}
+.second_footer li a:hover{color:#fff; text-decoration: none;}
+
+.third_footer{float:left; width:15%; text-align: left;}
+.third_footer li a{color:#929292; font-size:0.7vw}
+.third_footer li a:hover{color:#fff; text-decoration: none}
+
+
+

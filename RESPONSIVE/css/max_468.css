@@ -1,0 +1,38 @@
+@media all and (max-width:468px){   
+.room_list_2 li:first-child span,
+.room_list_2 li:nth-of-type(2) span,
+.room_list_2 li:nth-of-type(3) span{font-size:1.1rem}
+    
+    .preview_list li{float:none; width:100%;}
+    
+    .preview_list li img{width:100%;}
+
+.preview_list li:first-child{text-align: center; margin-bottom:3%;}
+.preview_list li:nth-of-type(2){text-align: center;}
+    
+.vip_text,
+.event_text,
+.Room_text,
+.hall_text
+{font-family: '휴먼옛체'; font-weight:500; font-size:1rem; color:#1f1e1e; margin-bottom:2%;  margin-top:2%}
+
+.vip_button,
+.Room_button,
+.event_button,
+.hall_button{border: 1px solid #000; background-color:#fff; display:inline-block; font-size:0.8rem; font-weight:300; width:30%; text-align: center;}
+
+.vip_button a,
+.Room_button a,
+.event_button a,
+.hall_button a{color:#000;} 
+
+.prevbtn{display:none}
+.nextbtn{display:none}
+.slide_btn{display:none}
+    
+.room_list li span{position:absolute; top:80%; left:10%; display:none; color:#fff; font-size:3vw}
+.room_list li.on span{position:absolute; top:80%; left:10%; display:block;}
+
+   .room_list li span{position:absolute; top:80%; left:10%; display:none; color:#fff; font-size:5vw}
+.room_list li.on span{position:absolute; top:80%; left:10%; display:block;}
+}

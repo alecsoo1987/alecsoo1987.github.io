@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#footerWrap{width:100%; background-color:#000;}
+.whole_footer{width:1260px; background-color:#000; margin:0px auto;}
+.footer_logowrap{float:left; width:150px; height:200px; margin-top:40px;}
+.footer{float:left; width:1060px; margin-top:30px; height:150px;}
+.footer_menu{width:1060px; margin-left:20px;}
+.footer_menu li{float:left; line-height:30px; padding:5px 10px;}
+.footer_menu li:after{content:''; border:1px solid #fff; margin-left:15px;}
+.footer_menu li:last-child:after{border:none;}
+.footer_menu li a{float:left; font-size:16px; color:#fff; display:block;}
+.footer_text{margin-left:30px; color:#999; font-size:12px;}
+.copy{margin-left:30px; color:#fff; font-size:12px;}

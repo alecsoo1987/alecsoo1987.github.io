@@ -1,0 +1,9 @@
+@media all and (max-width:1280px){
+    .preview_list li:last-child{display:none;}
+    .preview_list li{width:33.3333%}
+    .preview_list li:nth-of-type(3){text-align: right;}
+    .header_main h1{background-size:contain;} 
+    
+    .header_main2{display:none;}
+    .headerWrap2{display:none;}
+}
