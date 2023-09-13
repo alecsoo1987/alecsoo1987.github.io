@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+@font-face {
+    font-family: 'Handon3gyeopsal600g';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container{}
+.section2 {
+    position: relative;
+    /*background-color: #343A40*/
+    background:url(../images/background.png) no-repeat center center;
+    background-size:cover;
+	height:100vh;
+}
+
+.title2 {
+    padding: 5% 15%;
+    font-size: 48px;
+    color: 343a40;
+    font-weight:900;
+    margin-bottom:5%;
+}
+
+.title2::before {
+    width: 0%;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 13%;
+    left: -10%;
+    background-color: rgba(120, 184, 247, 0.95);
+}
+
+.title2::after {
+    width: 1px;
+    content: '';
+    height: 0vh;
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    background-color: rgba(205, 245, 98, 0.95);
+}
+
+.aboutwrap::before {
+    width: 0%;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    background-color: rgba(239, 63, 144, 0.95);
+}
+
+.section2:hover .title2::before {
+    width: 10%;
+    content: '';
+    height: 3px;
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    background-color: rgba(120, 184, 247, 0.95);
+    transition: all ease 1s
+}
+
+.section2:hover .title2::after {
+    width: 3px;
+    content: '';
+    height: 70vh;
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    background-color: rgba(98, 245, 211, 0.95);
+    transition: all ease 1s;
+    
+}
+
+.section2:hover .aboutwrap::before {
+    width: 60%;
+    content: '';
+    height: 3px;
+    position: absolute;
+    top: 13%;
+    left: 37%;
+    background-color: rgba(234, 118, 171, 0.87);
+    transition: all ease 1s
+}
+.aboutme{background:url(../images/JEANS.png) no-repeat 0 0;
+    background-size:contain; width:20%; height:50%;float:left; margin:0 5%;}
+.aboutwrap {    
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;    
+    color: #fff;
+    
+}
+
+.name,
+.name_txt {
+    text-align: left;
+}
+
+.name {
+    font-size: 50px;
+    font-family: '휴먼옛체'
+}
+
+.name_txt {
+    font-size: 18px;
+}
+
+.jeans_explain {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.aboutwrap .JIN {
+    font-size: 22px;
+}
+
+.title3 {    
+    text-align: center;
+    font-size: 48px;
+    color: rgba(120, 184, 247, 0.95);
+    font-weight:900;
+    margin-top:3%
+   
+}
+
+.section3{background-color:rgba(247, 198, 105, 0.62); box-shadow:3px 3px 5px 10px rgba(255,255,255,1)}
+.skills{float:left; width:30%; margin-top:1%;}
+.skills p{font-size:20px; font-family:'Handon3gyeopsal600g'; margin-bottom:3%;}
+.skills span {font-size:20px}
+
+.skills.on .progress-bar-success{width:95%; transition: all ease 1s}
+.skills.on .progress-bar-info{width:95%; transition: all ease 1s}
+.skills.on .progress-bar-warning{width:75%; transition: all ease 1s}
+.skills.on .progress-bar-danger{width:30%; transition: all ease 1s}
+.skills.on .progress-bar-reverse{width:10%; transition: all ease 1s}
+
+.pp_preview {width:100%; padding:2%; text-align: center; float:left;}
+.pp_preview li {height:40vh; width:30%; float:left; margin-right: 5%; margin-bottom:10%; position:relative;}
+.pp_preview li:nth-of-type(3){margin-right:0%;}
+.pp_preview li:nth-of-type(4){padding:0% 4%;}
+.pp_preview li img{width:100%; height: 100%; box-shadow:3px 3px 5px 1px rgba(0,0,0,1); border-radius:10px; margin-bottom:5%; transform:scale(1); transition:transform 0.4s ease-in-out;}
+
+
+.prepare{width:100%; display:inline-block; height:388px;box-shadow:3px 3px 5px 1px rgba(0,0,0,0.1); border-radius:10px; margin-bottom:5%; background-color:rgba(0,0,0,0.7); color:#fff; text-align: center; line-height:388px; font-size:30px;}
+
+
+.test{position:absolute; top:0; left:0; background-color:rgba(0,0,0,0.3); width:100%; height:388px; color:#fff; transition:all 0.5s ease; opacity:0; border-radius: 10px;
+font-size:25px; text-align: center; z-index:999}
+.test:hover{position:absolute; top:0; left:0; background-color:rgba(0,0,0,0.5); width:100%; height:40vh; color:#fff; transition:all 0.5s ease; opacity:1;  padding-top:45%}
+
+
+.fourth_pp .test{position:absolute; top:0; left:13%; background-color:rgba(0,0,0,0.3); width:74%; height:388px; color:#fff; transition:all 0.5s ease; opacity:0; border-radius: 10px;
+font-size:25px; margin-bottom:5%;}
+.fourth_pp .test:hover{position:absolute; top:0; left:13%; background-color:rgba(0,0,0,0.5); width:74%; height:40vh; color:#fff; transition:all 0.5s ease; opacity:1;  padding-top:45%; margin-bottom:5%;}
+/*.fourth_pp .test:hover{position:absolute; top:0; left:0; background-color:rgba(0,0,0,0.5); width:100%; height:388px; color:#fff; padding:35%; transition:all 0.5s ease; opacity:1;}*/
+  
+
+.before_btn{overflow: hidden; width:50%; text-align: center; font-family:''; height:40px; margin: auto; font-size:15px; transition:all ease 1s;
+box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.1); margin-top:2%; border:1px solid #871de2; font-family:'Baloo Bhai'}
+.before_btn::after {
+  /*background-color: #f00;*/	
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.s;
+  transform-origin: top left;
+  width: 0;
+  background-color:#222
+}
+
+.before_btn:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+button,button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none; 
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 15px;  
+  position: relative;    
+}
+
+button::before,
+button::after {
+  background: #222;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;    
+}
+
+.section4{height:300px; padding:1% 2% 0%; background-color:#343a40}
+.section4 .title4 {    
+    text-align: center;
+    font-size: 48px;
+    color: rgba(120, 184, 247, 0.95);
+    font-weight:900;
+}
+.section4 div{float:left; text-align: center; height:50%;}
+.section4 div span{font-size:25px; padding-top:20%; display:inline-block;}
+.phone{width:30%; margin-right:5%; background:url(../images/iphone.png) no-repeat center center; color:#f9f9f9}
+.e-mail{width:30%; margin-right:5%; background:url(../images/at.png) no-repeat center center; color:#f9f9f9}
+.address{width:30%;  background:url(../images/maps-and-flags.png) no-repeat center center; color:#f9f9f9}
+
+
