@@ -9,7 +9,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="stylesheet" href="css/bootstrap2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -23,7 +24,7 @@
         }
 
         .navbar {
-            background-color: #343A40
+            background-color: #c3c3c3 !important;
         }
 
 
@@ -58,7 +59,7 @@
         }
 
         #hometitle p span.main {
-            font-size: 30px;
+            font-size: 3rem;
             color: #fff;
             font-weight: 900
         }
@@ -75,12 +76,12 @@
 
         #hometitle {
             color: #fff;
-            font-size: 25px;
-            text-align: center;
+            font-size: 2.5rem;
             position: relative;
-            width: 50%;
-            margin: 25% auto;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
         }
 
         #section1 h2 {
@@ -97,7 +98,7 @@
         }
 
         /*key frame 이름=ani1*/
-        /*p span에 애니메이션을 적용할건데, 애니메이션 이름은 ani4이고, 0.35초에걸쳐 진행하것임 */
+        /*p span에 애니메이션을 적용할건데, 애니메이션 이름은 ani4이고, 0.35초에걸쳐 진행 */
         #hometitle.show p strong:first-child {
             animation-delay: 0.2s;
         }
@@ -176,38 +177,33 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">JEANS HOME</a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">ABOUT ME</a></li>
-                            <li><a href="#">PORTPOLIO</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+                  <a class="navbar-brand" href="#">JEANS HOME</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section2">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section3">Portpolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section4">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-        <section id="container">
+        <div id="container">
             <section class="section1 #section1">
-                <!-- section1 -->
-                <h2 class="text-center">HOME</h2><!-- 한글자씩 생겨나는 효과 -->
                 <div id="hometitle">
                     <div>
                         <p><strong>WELCOME</strong> <span>T</span><span>O</span> <span class="main">&#123;</span> <span
@@ -216,10 +212,26 @@
                             <strong>PORTPOLIO</strong> <span>.</span></p>
                     </div>
                 </div>
-            </section><!-- section1 -->
-            <section class="section2 #section2 clearfix">
-                <!-- section1 -->
-                <p class="text-left title2">ABOUT JEANS</p><!-- 한글자씩 생겨나는 효과 -->
+            </section>
+            <section class="section2 #section2">
+                <h3>WORK EXPIRENCE</h3>
+                <div class="aboutmeWorkEx">
+                    
+                    <div class="firstEx">
+                        <div class="firstExCicle">
+                            QA
+                        </div>
+                    </div>
+                    <div class="secondEx">
+                        <div class="secondExCicle">
+                            Publishing & Front-End
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutmeStudyEx">
+                    <h3>STUDY EXPIRENCE</h3>
+                </div>
+                <p class="text-left title2">ABOUT JEANS</p>
                 <div class="aboutme"></div>
                 <div class="aboutwrap">
                     <h3 class="name">김형진(Jeans)<br /><span class="JIN">金亨璡</span></h3>
@@ -237,10 +249,9 @@
                     </p>
                 </div>
             </section>
-            <section class="section3 #section3 clearfix">
-                <!-- section1 -->
-                <p class="text-left title3">PORTPOLIO</p><!-- 한글자씩 생겨나는 효과 -->
-                <ul class="pp_preview clearfix">
+            <section class="section3 #section3">
+                <p class="text-left title3">PORTPOLIO</p>
+                <ul class="pp_preview">
                     <li class="first_pp"><img src="images/responsive.png" alt="반응형웹 포트폴리오">
                         <a href="RESPONSIVE/TAMNA%20HOTEL.html"><span class="test">반응형 사이트 바로가기</span></a>
                         <p class="first_explain">
@@ -323,12 +334,12 @@
 
 
             </section>
-        </section>
+        </div>
     </div>
 
     <!--container E-->
     <footer id="footer">
-        <section class="section4 #section4 clearfix">
+        <section class="section4 #section4">
             <!-- section3 -->
             <p class="text-left title4">CONTACT</p><!-- 한글자씩 생겨나는 효과 -->
             <div class="phone">
@@ -343,6 +354,7 @@
         </section>
     </footer>
     <script type="text/javascript" src="js/Query.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
