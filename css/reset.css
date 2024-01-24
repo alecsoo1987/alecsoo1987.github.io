@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap&subset=gujarati,latin-ext,vietnamese');
 @import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
 @font-face { font-family: 'Handon3gyeopsal600g'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff') format('woff'); font-weight: normal; font-style: normal; }
-
+@font-face { font-family: 'BinggraeMelona'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona.woff') format('woff'); font-weight: normal; font-style: normal; }
 body,div,header,nav,footer,h1,h2,h3,ul,li,img,section,aside,article,a,span,br,p,i{margin:0;padding:0;box-sizing:border-box;}
 ul{list-style:none;}
-body{font-family:'Baloo Bhai';}
+body{font-family:'Handon3gyeopsal600g';}
