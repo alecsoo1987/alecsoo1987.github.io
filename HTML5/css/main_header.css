@@ -1,54 +1,251 @@
 @charset "utf-8";
-#wrapper{width:100%; position:relative;}
-#headerWrap{width:100%; position:relative;}
-.header_intro{width:1900px; padding:0 200px; height:35px; line-height:35px; background-color:#eae7e7; margin:0 auto;}
-.intro_logo{float:left; background:url(../images/icon/nclenage_logo.png) no-repeat center center; margin-right:20px; }
-.intro_logo a{font-size:0; display:inline-block; width:67px; height:22px;}
-.intro_game_logo{float:left; background:url(../images/icon/nclenage_logo_korean.png)no-repeat center center;}
-.intro_game_logo a{font-size:0; display:inline-block; width:70px; height:24px;}
-.intro_menu{text-align: right;}
-.intro_menu li{display:inline-block; margin-right:10px;  height:25px; line-height: 25px;}
-.intro_menu li:nth-of-type(3){background-color:#b5aca8; color:#fff; border-radius: 15%; width:70px; text-align: center; border:1px solid #9e928d;}
-.intro_menu li:nth-of-type(3) a{color:#fff}
-.intro_menu li a{font-size:12px; font-family:'dotum'}
 
-.gnbwrap{width:100%; position:absolute; left:0; top:35px; z-index: 999; display: flex; flex-flow: row nowrap; justify-content: space-between;}
+#wrapper {
+    width: 100%;
+    position: relative;
+}
 
-.gnbheadwrap.scroll{width:100%; display:block; position:absolute; top:0px; left:0; height:90px; background-color:rgba(0,0,0,1); z-index:-1}
-.gnbheadwrap.on{width:100%; display:block; position:absolute; top:0px; left:0; height:90px; background-color:rgba(0,0,0,8); z-index:-1}
-.gnbmainwrap.on{width:100%; display:block; position:absolute; top:90px; left:0; height:200px; background-color:rgba(0,0,0,1); z-index:-1}
-.gnbwrap:after{content:''; width:100%; border:0.03em solid #d9d9d9; display:block; position:absolute; top:90px; left:0; z-index:-1}
+#headerWrap {
+    width: 100%;
+    position: relative;
+}
 
-.header_logo{ background:url(../images/icon/Main_Font_white2.png) no-repeat; width:17vw; height:60px; margin:15px 0px 15px 20px;}
-.header_logo a{font-size:0; display:inline-block; width:290px; height:60px;}
+.header_intro {
+    width: 1900px;
+    padding: 0 200px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #eae7e7;
+    margin: 0 auto;
+}
+
+.intro_logo {
+    float: left;
+    background: url(../images/icon/nclenage_logo.png) no-repeat center center;
+    margin-right: 20px;
+}
+
+.intro_logo a {
+    font-size: 0;
+    display: inline-block;
+    width: 67px;
+    height: 22px;
+}
+
+.intro_game_logo {
+    float: left;
+    background: url(../images/icon/nclenage_logo_korean.png)no-repeat center center;
+}
+
+.intro_game_logo a {
+    font-size: 0;
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+}
+
+.intro_menu {
+    text-align: right;
+}
+
+.intro_menu li {
+    display: inline-block;
+    margin-right: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.intro_menu li:nth-of-type(3) {
+    background-color: #b5aca8;
+    color: #fff;
+    border-radius: 15%;
+    width: 70px;
+    text-align: center;
+    border: 1px solid #9e928d;
+}
+
+.intro_menu li:nth-of-type(3) a {
+    color: #fff
+}
+
+.intro_menu li a {
+    font-size: 12px;
+    font-family: 'dotum'
+}
+
+.gnbwrap {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.gnbheadwrap.scroll {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: -1
+}
+
+.gnbheadwrap.on {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 8);
+    z-index: -1
+}
+
+.gnbmainwrap.on {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: -1
+}
+
+.gnbwrap:after {
+    content: '';
+    width: 100%;
+    border: 0.03em solid #d9d9d9;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: -1
+}
+
+.header_logo {
+    background: url(../images/icon/Main_Font_white2.png) no-repeat;
+    width: 17vw;
+    height: 60px;
+    margin: 15px 0px 15px 20px;
+}
+
+.header_logo a {
+    font-size: 0;
+    display: inline-block;
+    width: 290px;
+    height: 60px;
+}
 
 
-.gnb li a{color:#fff}
-.gnb_1_list {display: flex; flex-flow: row nowrap;}
-.gnb_1_list > li { text-align:center;}
+.gnb li a {
+    color: #fff
+}
 
-.gnb_1_list > li:first-child {width:7.2vw;}
-.gnb_1_list > li:nth-of-type(2) {width:7.2vw}
-.gnb_1_list > li:nth-of-type(3) {width:7.2vw;}
-.gnb_1_list > li:nth-of-type(4) {width:7.2vw;}
-.gnb_1_list > li:nth-of-type(5) {width:7.2vw;}
-.gnb_1_list > li:nth-of-type(6) {width:7.2vw;}
-.gnb_1_list > li:last-child {width:7.2vw;}
-.gnb_1_list > li > a{font-size:16px; height:90px; line-height:90px; display:block; font-weight:700}
+.gnb_1_list {
+    display: flex;
+    flex-flow: row nowrap;
+}
 
-.gnb_1_list .gnb_2_list{height:175px; display: none; margin-top:20px;}
-.gnb_1_list .gnb_2_list li{line-height:35px;}
-.gnb_1_list .gnb_2_list li a{font-size:13px; color:#fff; display:block;}
-.gnb_1_list .gnb_2_list li a:hover{color:#c67171}
+.gnb_1_list>li {
+    text-align: center;
+}
 
-.PC_menu span{ color:#fff; display:inline-block; text-align: center;
-                font-family:'Baloo Bhai';}
-.PC_menu .header_login{width:3.6vw; font-size:15px; margin-top:35px; transition:all 0.5s ease}
-.PC_menu .header_login:hover{transform: scale(1.5)}
-.PC_menu .header_PC_info{width:5.4vw; font-size:15px; margin-top:35px; margin-right:10px;
-background-color:rgba(135, 225, 247, 0.64)}
+.gnb_1_list>li:first-child {
+    width: 7.2vw;
+}
 
-.PC_menu .game_start{width:14vw; font-size:33px; background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,0.9) 0%, rgba(185,253,45,0.9) 100%); line-height:90px;}
+.gnb_1_list>li:nth-of-type(2) {
+    width: 7.2vw
+}
 
-.PC_menu .game_start:hover{color:#000}
+.gnb_1_list>li:nth-of-type(3) {
+    width: 7.2vw;
+}
+
+.gnb_1_list>li:nth-of-type(4) {
+    width: 7.2vw;
+}
+
+.gnb_1_list>li:nth-of-type(5) {
+    width: 7.2vw;
+}
+
+.gnb_1_list>li:nth-of-type(6) {
+    width: 7.2vw;
+}
+
+.gnb_1_list>li:last-child {
+    width: 7.2vw;
+}
+
+.gnb_1_list>li>a {
+    font-size: 16px;
+    height: 90px;
+    line-height: 90px;
+    display: block;
+    font-weight: 700
+}
+
+.gnb_1_list .gnb_2_list {
+    height: 175px;
+    display: none;
+    margin-top: 20px;
+}
+
+.gnb_1_list .gnb_2_list li {
+    line-height: 35px;
+}
+
+.gnb_1_list .gnb_2_list li a {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+}
+
+.gnb_1_list .gnb_2_list li a:hover {
+    color: #c67171
+}
+
+.PC_menu span {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Baloo Bhai';
+}
+
+.PC_menu .header_login {
+    width: 3.6vw;
+    font-size: 15px;
+    margin-top: 35px;
+    transition: all 0.5s ease
+}
+
+.PC_menu .header_login:hover {
+    transform: scale(1.5)
+}
+
+.PC_menu .header_PC_info {
+    width: 5.4vw;
+    font-size: 15px;
+    margin-top: 35px;
+    margin-right: 10px;
+    background-color: rgba(135, 225, 247, 0.64)
+}
+
+.PC_menu .game_start {
+    width: 14vw;
+    font-size: 33px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 0.9) 0%, rgba(185, 253, 45, 0.9) 100%);
+    line-height: 90px;
+}
+
+.PC_menu .game_start:hover {
+    color: #000
+}
