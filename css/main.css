@@ -139,17 +139,29 @@
     position: relative;
 }
 
-
-.pp_preview li.first_pp .backgroundImg {
+.pp_preview li.pp1 .backgroundImg {
     background-image: url('../images/responsive.png');
 }
 
-.pp_preview li.second_pp .backgroundImg {
+.pp_preview li.pp2 .backgroundImg {
     background-image: url('../images/html5.png');
 }
 
-.pp_preview li.third_pp .backgroundImg {
+.pp_preview li.pp3 .backgroundImg {
     background-image: url('../images/html4.png');
+}
+
+.pp_preview li .explain {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pp_preview li .explain span{
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .pageLinkTag {
@@ -181,54 +193,53 @@
     opacity: 1;
 }
 
-
 .before_btn {
-    overflow: hidden;
-    width: 50%;
-    text-align: center;
-    font-family: '';
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: fit-content;
+    width: 40%;
     height: 40px;
-    margin: auto;
-    font-size: 15px;
-    transition: all ease 1s;
-    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.1);
-    margin-top: 2%;
-    border: 1px solid #871de2;
-    font-family: 'Baloo Bhai'
-}
-
-.before_btn::after {
-    height: 100%;
-    left: -35%;
-    top: 0;
-    transform: skew(50deg);
-    transition-duration: 0.s;
-    transform-origin: top left;
-    width: 0;
-    background-color: #222
-}
-
-.before_btn:hover:after {
-    width: 135%;
-}
-
-.before_btn,
-.before_btn::after {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.before_btn {
-    background: none;
-    border-radius: 5px;
-    color: #000;
-    display: block;
-    font-size: 15px;
-    position: relative;
-}
-
-.before_btn:hover {
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #ff6a70;
+    margin: 0 auto;
     color: #fff;
-}
+  }
+
+  .before_btn:hover {
+    color: #ff6a70;
+    background: transparent;
+     box-shadow:none;
+  }
+
+  .before_btn:before,
+  .before_btn:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #ff6a70;
+    /* box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002; */
+    transition:400ms ease all;
+  }
+
+  .before_btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  .before_btn:hover:before,
+  .before_btn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }

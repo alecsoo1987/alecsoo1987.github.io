@@ -303,45 +303,54 @@
             </section>
             <section class="section4 #section4">
                 <h3>PORTPOLIO</h3>
-                <h4>· 첫 작업물 (메인 페이지 리뉴얼)</h4>
+                <h4>· 최초 작업물 (메인 페이지 리뉴얼)</h4>
                 <div class="portpolioWrap">
                     <ul class="pp_preview">
-                        <li class="first_pp">
-                            <div class="backgroundImg">
+                        <li class="pp1">
+                            <div class="backgroundImg" id="ppImg1">
                                 <a href="RESPONSIVE/TAMNA%20HOTEL.html" class="pageLinkTag">
                                     <span class="pageLinkText">반응형 사이트 바로가기</span>
                                 </a>
                             </div>
-                            <p class="first_explain">
-                                <span>RESPONSIVE / TAMNA STAY HOTEL</span><br />
-                                반응형 동작이 존재하지 않는 사이트에 반응형 적용 및 리뉴얼
-                                <button class="before_btn" onmouseover="test()">리뉴얼 전 사이트</button>
+                            <p class="explain">
+                                <span>RESPONSIVE / TAMNA STAY HOTEL</span>
+                                Mobile 웹페이지 작업 <br/>
+                                메인 페이지 디자인 변경
                             </p>
+                            <button class="before_btn" onmouseenter="changeBgImg('ppImg1')" onmouseleave="resetBgImg('ppImg1')">
+                                <span>
+                                    리뉴얼 전 디자인 보기
+                                </span>
+                            </button>
                         </li>
-                        <li class="second_pp">
-                            <div class="backgroundImg">
+                        <li class="pp2">
+                            <div class="backgroundImg" id="ppImg2">
                                 <a href="HTML5/LINEAGE2.html" class="pageLinkTag">
                                     <span class="pageLinkText">HTML5 사이트 바로가기</span>
                                 </a>
                             </div>
-                            <p class="second_explain">
+                            <p class="explain">
                                 <span>HTML5 / LINEAGE</span>
-                                JQUERY를 활용하여 게임 사이트를 RENEWAL<br />
+                                JQUERY를 활용하여 게임 사이즈 RENEWAL<br />
                                 GNB, VISUAL, CONTENTS 등에 다양한 애니메이션 효과를 부여
-                                <button class="before_btn">리뉴얼 전 디자인</button>
                             </p>
+                            <button class="before_btn" onmouseenter="changeBgImg('ppImg2')" onmouseleave="resetBgImg('ppImg2')">
+                                리뉴얼 전 디자인 보기
+                            </button>
                         </li>
-                        <li class="third_pp">
-                            <div class="backgroundImg">
+                        <li class="pp3">
+                            <div class="backgroundImg" id="ppImg3">
                                 <a href="HTML4/MainPage.html" class="pageLinkTag">
                                     <span class="pageLinkText">HTML4 사이트 바로가기</span>
                                 </a>
                             </div>
-                            <p class="third_explain">
+                            <p class="explain">
                                 <span>HTML4 / 진주시청</span>
-                                처음 제작한 웹페이지<br /> 기존페이지를 바탕으로 RENEWAL<br />
-                                <button class="before_btn">리뉴얼 전 디자인</button>
+                                처음 제작한 웹페이지<br /> 기존 관공서 페이지를 HTML4를 활용하여 RENEWAL<br />
                             </p>
+                            <button class="before_btn" onmouseenter="changeBgImg('ppImg3')" onmouseleave="resetBgImg('ppImg3')">
+                                리뉴얼 전 디자인 보기
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -371,7 +380,29 @@
 
 </html>
 <script>
-    function test() {
-        console.log('a')
+    function changeBgImg(targetId) {
+        changeTarget = document.getElementById(targetId)
+        if(targetId === 'ppImg1') {
+            changeTarget.style.backgroundImage = "url('../images/responsive_before.png')"
+        }
+        if(targetId === 'ppImg2') {
+            changeTarget.style.backgroundImage = "url('../images/html5_before.png')"
+        }
+        if(targetId === 'ppImg3') {
+            changeTarget.style.backgroundImage = "url('../images/html4_before.png')"
+        }
+    }
+
+    function resetBgImg(targetId) {
+        changeTarget = document.getElementById(targetId)
+        if(targetId === 'ppImg1') {
+            changeTarget.style.backgroundImage = "url('../images/responsive.png')"
+        }
+        if(targetId === 'ppImg2') {
+            changeTarget.style.backgroundImage = "url('../images/html5.png')"
+        }
+        if(targetId === 'ppImg3') {
+            changeTarget.style.backgroundImage = "url('../images/html4.png')"
+        }
     }
 </script>

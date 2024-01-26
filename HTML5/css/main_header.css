@@ -12,20 +12,20 @@
 .intro_menu li:nth-of-type(3) a{color:#fff}
 .intro_menu li a{font-size:12px; font-family:'dotum'}
 
-.gnbwrap{width:100vw; position:absolute; left:0; top:35px; z-index: 999}
+.gnbwrap{width:100%; position:absolute; left:0; top:35px; z-index: 999; display: flex; flex-flow: row nowrap; justify-content: space-between;}
 
 .gnbheadwrap.scroll{width:100%; display:block; position:absolute; top:0px; left:0; height:90px; background-color:rgba(0,0,0,1); z-index:-1}
 .gnbheadwrap.on{width:100%; display:block; position:absolute; top:0px; left:0; height:90px; background-color:rgba(0,0,0,8); z-index:-1}
 .gnbmainwrap.on{width:100%; display:block; position:absolute; top:90px; left:0; height:200px; background-color:rgba(0,0,0,1); z-index:-1}
 .gnbwrap:after{content:''; width:100%; border:0.03em solid #d9d9d9; display:block; position:absolute; top:90px; left:0; z-index:-1}
 
-.header_logo{float:left; background:url(../images/icon/Main_Font_white2.png) no-repeat; width:17vw; height:60px; margin:15px 0px 15px 20px;}
+.header_logo{ background:url(../images/icon/Main_Font_white2.png) no-repeat; width:17vw; height:60px; margin:15px 0px 15px 20px;}
 .header_logo a{font-size:0; display:inline-block; width:290px; height:60px;}
 
 
-.gnb{float:left; width:58vw;}
 .gnb li a{color:#fff}
-.gnb_1_list > li {float:left; text-align:center;}
+.gnb_1_list {display: flex; flex-flow: row nowrap;}
+.gnb_1_list > li { text-align:center;}
 
 .gnb_1_list > li:first-child {width:7.2vw;}
 .gnb_1_list > li:nth-of-type(2) {width:7.2vw}
@@ -41,7 +41,7 @@
 .gnb_1_list .gnb_2_list li a{font-size:13px; color:#fff; display:block;}
 .gnb_1_list .gnb_2_list li a:hover{color:#c67171}
 
-.PC_menu span{float:left; color:#fff; display:inline-block; text-align: center;
+.PC_menu span{ color:#fff; display:inline-block; text-align: center;
                 font-family:'Baloo Bhai';}
 .PC_menu .header_login{width:3.6vw; font-size:15px; margin-top:35px; transition:all 0.5s ease}
 .PC_menu .header_login:hover{transform: scale(1.5)}
